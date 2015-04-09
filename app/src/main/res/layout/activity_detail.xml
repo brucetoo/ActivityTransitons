@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rv_root"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/iv_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/test"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:layout_below="@+id/iv_detail_photo"
+        android:id="@+id/tv_desc_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="To live is the rarest thing in the world,Most people exit,that's all"
+        />
+</RelativeLayout>
